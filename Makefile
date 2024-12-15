@@ -12,7 +12,11 @@ IFLAGS = $(addprefix -I ,$(INC_DIR))
 
 SRC_DIR = src
 
-SRC_FILE = main.c
+SRC_FILE = \
+		   main.c \
+		   utils/ph_atoi.c \
+		   utils/ph_strlen.c \
+		   utils/ph_log.c
 
 SRCS = $(addprefix $(SRC_DIR)/,$(SRC_FILE))
 
